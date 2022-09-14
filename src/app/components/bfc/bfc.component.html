@@ -1,0 +1,73 @@
+<app-navbar></app-navbar>
+<div class="container ps-4 pe-4">
+    <div class="introduction">
+        <h1 class="mt-5">But First Coffee - Olongapo</h1>
+        <div class="d-flex align-items-center flex-wrap gap-2 mt-3 mb-5">
+            <div class="d-flex gap-2 align-items-center chip html">
+                <i class="fa-brands fa-html5"></i>
+                <p class="mb-0">HTML</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip css">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="mb-0">CSS</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip js">
+                <i class="fa-brands fa-js"></i>
+                <p class="mb-0">JavaScript</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip github">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/ralphMartinFlores/bfc-olongapo" target="_blank" rel="noopener noreferrer">Repository</a>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip personal">
+                <i class="fa-solid fa-person"></i>
+                <p class="mb-0">Personal</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip personal">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="https://butfirstcoffee-olongapo.netlify.app" target="_blank" rel="noopener noreferrer">Visit Site</a>
+            </div>
+        </div>
+        <p>This is a Vanilla HTML, CSS, and JS landing page for the popular coffee shop franchise "But First, Coffee" which originated in Metro Manila and now also has a branch in Olongapo City.</p>
+        <p>I personally go to this shop when I want a nice sip of ice cold coffee, and although the main franchise already has a landing page itself, the branch here in our city does not, so I figured why not create one?</p>
+        <img src="assets/images/bfc-windowed-screenshot.webp" alt="">
+    </div>
+    <div class="objectives">
+        <div>
+            <img src="assets/images/goal-illustration.svg" alt="">
+        </div>
+        <div>
+            <h1 class="mt-3 mb-4 mb-lg-5">Objectives & Goals</h1>
+            <p>A landing page with more sections was something I really wanted to develop. Additionally, I wanted to experiment with a dark mode color scheme that wasn't actually just a black shade but rather one that would still better represent the company. </p>
+            <p>Finally, I was interested in finding out how to upload a static website created with Vanilla HTML and CSS to any free hosting service that is available.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <img src="assets/images/bfc-full-screenshot.webp" alt="">
+        </div>
+    </div>
+    <div class="problems">
+        <h1 class="mt-3 mb-4 mb-lg-5">Problems Encountered & The Path to Solving them</h1>
+        <p>The hero section of this project went through several iterations; the second and third weren't just satisfying for me.</p>
+        <p>The solution to my issue was to use a fresh image from Pexels, icons from Flaticons, overlap those images, and add new quote bubbles to successfully apply the approach that I had just learned from YouTube. After that, I was finally happy with the updated and enhanced hero section. 😊</p>
+        <div>
+            <img src="assets/images/bfc-modal-screenshot.webp" alt="">
+            <p class="mw-100 text-center mb-4">ABOVE: Box shown when "See Menu" button is clicked.</p>
+        </div>
+    </div>
+    <div class="lessons">
+        <div>
+            <h1 class="mt-4 mb-4 mb-lg-5">Lessons Learned ✨</h1>
+            <p>Making better hero sections was one of the most significant lessons I took away from this project. As a result of learning a new technique, I believe I can now create better hero sections than I ever could before. </p>
+            <p>In order to better understand the BEM methodology, I checked it out once more for writing CSS classes and made the decision to use it more correctly in this project.</p>
+            <p>In addition, I used a design technique known as "Neubrutalism," which I believe gives the project a more distinctive personality and creates a stunning contrast between the black borders and the coffee-brown background.</p>
+            <p>Oh, and I also got to finally upload a static site for the first time to Netlify.</p>
+        </div>
+        <img src="assets/images/lessons.svg" alt="">
+    </div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="scroll-top--btn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<app-footer></app-footer>

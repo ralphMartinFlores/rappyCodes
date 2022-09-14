@@ -1,0 +1,73 @@
+<app-navbar></app-navbar>
+<div class="container ps-4 pe-4">
+    <div class="introduction">
+        <h1 class="mt-5">The Planets</h1>
+        <div class="d-flex align-items-center flex-wrap gap-2 mt-3 mb-5">
+            <div class="d-flex gap-2 align-items-center chip angular">
+                <i class="fa-brands fa-angular"></i>
+                <p class="mb-0">Angular</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip angularmaterial">
+                <i class="fa-brands fa-angular"></i>
+                <p class="mb-0">Angular Material</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip github">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/ralphMartinFlores/the-planets" target="_blank" rel="noopener noreferrer">Repository</a>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip personal">
+                <i class="fa-solid fa-person"></i>
+                <p class="mb-0">Personal</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip personal">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="https://planets-primero.netlify.app" target="_blank" rel="noopener noreferrer">Visit Site</a>
+            </div>
+        </div>
+        <p>This is a slightly modified version of Frontend Mentor's The Planets challenge, this simple site contains beautiful images and information about the planets in our Solar System.</p>
+        <p>Because I decided that I could have the similar experience with tabs, I developed the project using Angular and Angular Material for easy Component creation for each Planet and easy routing. This slight alteration alone sets it apart from the version of Frontend Mentor.</p>
+        <img src="assets/images/planets-windowed-screenshot.webp" alt="">
+    </div>
+    <div class="objectives">
+        <div>
+            <img src="assets/images/goal-illustration.svg" alt="">
+        </div>
+        <div>
+            <h1 class="mt-3 mb-4 mb-lg-5">Objectives & Goals</h1>
+            <p>I mainly wanted to be able to transfer an Angular-made static site to Netlify and just recreate the challenge using the framework.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <img src="assets/images/planets-full-screenshot-1.webp" alt="">
+        </div>
+        <div class="col-12">
+            <img src="assets/images/planets-full-screenshot-2.webp" alt="">
+        </div>
+    </div>
+    <div class="problems">
+        <h1 class="mt-3 mb-4 mb-lg-5">Problems Encountered & The Path to Solving them</h1>
+        <p>Although I didn't have many issues while developing this project, I did run across one as I was about to launch the site. Once I developed the project and uploaded it to Netlify, the routing stopped working; it turns out that it is more difficult than not using a framework.</p>
+        <p>Fortunately, I was able to resolve that one issue after discovering an online guide that addresses how to correctly publish an Angular project to Netlify.</p>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="assets/images/planets-full-screenshot-3.webp" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="assets/images/planets-full-screenshot-4.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="lessons">
+        <div>
+            <h1 class="mt-4 mb-4 mb-lg-5">Lessons Learned ✨</h1>
+            <p>The secret to getting our newly published site developed with Angular to Netlify routing to function is customizing our angular.json file and creating a _redirects file inside of our src folder. This project being the second to be uploaded to Netlify taught me that the hosting service is in fact trustworthy.</p>
+            <p>I will be sticking to Netlify for quite a while, I suppose 😄</p>
+        </div>
+        <img src="assets/images/lessons.svg" alt="">
+    </div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="scroll-top--btn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<app-footer></app-footer>

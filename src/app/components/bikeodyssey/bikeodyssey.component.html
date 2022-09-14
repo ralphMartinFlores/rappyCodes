@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+<div class="container ps-4 pe-4">
+    <div class="introduction">
+        <h1 class="mt-5">Bike Odyssey</h1>
+        <div class="d-flex align-items-center flex-wrap gap-2 mt-3 mb-5">
+            <div class="d-flex gap-2 align-items-center chip html">
+                <i class="fa-brands fa-html5"></i>
+                <p class="mb-0">HTML</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip css">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="mb-0">CSS</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip js">
+                <i class="fa-brands fa-js"></i>
+                <p class="mb-0">JavaScript</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip github">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/ralphMartinFlores/bike-odyssey" target="_blank" rel="noopener noreferrer">Repository</a>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip personal">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="https://bikeodyssey.netlify.app" target="_blank" rel="noopener noreferrer">Visit Site</a>
+            </div>
+        </div>
+        <p>A landing page task assigned to me during my On-the-Job Training at <a href="https://iformatlogic.com/" target="_blank" rel="noopener noreferrer">iFormatLogic</a>, Bike Odyssey is my improvement of the given Motorcycle shop landing page template.</p>
+        <img src="assets/images/bikeodyssey-windowed-screenshot.webp" alt="">
+    </div>
+    <div class="objectives">
+        <div>
+            <img src="assets/images/goal-illustration.svg" alt="">
+        </div>
+        <div>
+            <h1 class="mt-3 mb-4 mb-lg-5">Objectives & Goals</h1>
+            <p>First off, I wanted the elements to have enough breathing room with one another in order for this project to help convey who I am as a person who enjoys creating aesthetically pleasing User Interfaces.</p>
+            <p>Additionally, I wanted to include pictures and techniques that were more modern and attractive than those seen on the template such as making the navigation simpler and placing it inside of a hero section that is also improved, adding a Products section, and adding more known brands in the Partners section.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <img src="assets/images/bikeshop.webp" alt="">
+        </div>
+        <div class="col-12 col-lg-6">
+            <img src="assets/images/bikeodyssey-full-screenshot.webp" alt="">
+        </div>
+    </div>
+    <div class="problems">
+        <h1 class="mt-3 mb-4 mb-lg-5">Problems Encountered & The Path to Solving them</h1>
+        <p>The biggest issues I ran through during the creation of this landing page were numerous edits from my supervisor. My solutions included adjusting section padding, shortening colored lines under the section titles, making a more functional navigation bar, and making cards look more modern.</p>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="assets/images/bikeodyssey-mobile-screenshot.webp" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="assets/images/bikeodyssey-mobile-screenshot-1.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="lessons">
+        <div>
+            <h1 class="mt-4 mb-4 mb-lg-5">Lessons Learned ✨</h1>
+            <p>This project taught me how to use gradients to make cards with full-sized photos while still making the text inside it readable by contrasting it with the image's black gradient; for me, that was a really useful technique, it's beautiful and effective.</p>
+        </div>
+        <img src="assets/images/lessons.svg" alt="">
+    </div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="scroll-top--btn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<app-footer></app-footer>

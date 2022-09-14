@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="container ps-4 pe-4">
+    <h1 class="mt-5 mb-5">All Projects</h1>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-5">
+            <img src="assets/images/bfc-project-banner-1.webp" alt="">
+            <h3 class="mt-4 mb-3">But First, Coffee - Olongapo</h3>
+            <p>A landing page for a popular coffee shop in Olongapo City</p>
+            <a class="pb-2" routerLink="/bfc-olongapo">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+            <img src="assets/images/gocery-project-banner.webp" alt="">
+            <h3 class="mt-4 mb-3">Gocery (2022)</h3>
+            <p>An e-commerce application built with Angular dedicated to selling groceries</p>
+            <a class="pb-2" routerLink="/gocery">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+            <img src="assets/images/planets-project-banner.webp" alt="">
+            <h3 class="mt-4 mb-3">The Planets</h3>
+            <p>My own spin on Frontend Mentor's Planets challenge, built using Angular Material.</p>
+            <a class="pb-2" routerLink="/planets">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+            <img src="assets/images/bikeodyssey-project-banner.webp" alt="">
+            <h3 class="mt-4 mb-3">Bike Odyssey</h3>
+            <p>A landing page for a fictional motorcycle business, Bike Odyssey.</p>
+            <a class="pb-2" routerLink="/bike-odyssey">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+            <img src="assets/images/blanche-project-banner.webp" alt="">
+            <h3 class="mt-4 mb-3">Blanche</h3>
+            <p>Landing page for Blanche, A business that sells home products made with quality cotton.</p>
+            <a class="pb-2" routerLink="/blanche">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="scroll-top--btn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<app-footer></app-footer>

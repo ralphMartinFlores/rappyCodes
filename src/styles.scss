@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --ff-primary: 'Roboto Mono', monospace;
+    --ff-secondary: 'Roboto', sans-serif;
+}
+body {
+    --background-color: #FFF;
+    --text-color: #696969;
+    --container-color: hsl(0, 0%, 98%);
+    --header-color: #000;
+    --display: block;
+    --alert-bg-color: #cff4fc;
+    --alert-text-color: #055160;
+    transition: all .7s;
+}
+body.dark-theme {
+    --background-color: #121212;
+    --text-color: rgba(255, 255, 255, 0.7);
+    --container-color: #1e1e1e;
+    --header-color: rgba(255, 255, 255);
+    --display: none;
+    --alert-bg-color: #1e1e1e;
+    --alert-text-color: rgba(255, 255, 255, 0.7);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--background-color);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.scroll-top--btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FF81AE;
+    color: #FFF;
+    outline: none;
+    padding: 0;
+    border: none;
+    transition: all .3s;
+    &:hover {
+        background-color: #b35a7a;
+    }
+}

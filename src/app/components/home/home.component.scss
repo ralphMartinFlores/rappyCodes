@@ -1,0 +1,172 @@
+h1 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    color: var(--header-color);
+}
+p {
+    font-family: var(--ff-secondary);
+    font-size: clamp(0.875em, 2.5vw, 1em);
+    color: var(--text-color);
+}
+.greetings {
+    position: relative;
+    line-height: 1.7;
+    h1 {
+        font-size: clamp(2em, 5vw, 4em);
+    }
+    .greetings__subtitle {
+        max-width: 50ch;
+        font-size: clamp(1.125em, 2.5vw, 1.5em);
+        span {
+            font-family: var(--ff-primary);
+        }
+    }
+    .greetings__header__image {
+        width: 100%;
+        border-radius: 4px;
+        height: 12.5rem;
+        background-size: cover;
+        background-image: url('../../../assets/images/hero_banner.webp');
+        background-position: center center;
+    }
+    .greetings__watermark {
+        position: absolute;
+        top: 0;
+        left: 1.5rem;
+        max-width: 9.375rem;
+        z-index: -1;
+        display: var(--display);
+    }
+    .greetings__header__image {
+        margin: 3.5rem 0;
+        border-radius: 0.5rem;
+    }
+}
+.skills {
+    p {
+        line-height: 1.7;
+    }
+    .myskills__icons__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 3.125rem 0;
+        .myskills__skill {
+            text-align: center;
+            img {
+                max-width: 4rem;
+            }
+        }
+    }
+}
+.projects {
+    p {
+        line-height: 1.7;
+    }
+    h3 {
+        font-family: var(--ff-primary);
+        font-weight: 700;
+        color: var(--header-color);
+    }
+    a {
+        font-family: var(--ff-primary);
+        color: var(--text-color);
+        font-size: clamp(0.875em, 2.5vw, 1em);
+        border-bottom: 2px solid transparent;
+        transition: all .3s;
+        &:hover {
+            color: var(--header-color);
+            border-bottom: 2px solid var(--header-color);
+        }
+    }
+    img {
+        border-radius: 0.5rem;
+    }
+}
+.footer__email__container {
+    margin-top: 100px;
+    a {
+        font-family: var(--ff-primary);
+        color: var(--text-color);
+        font-size: clamp(0.875em, 2.5vw, 1em);
+        border-bottom: 2px solid var(--text-color);
+        transition: all .3s;
+        &:hover {
+            border-bottom: 2px solid #fff;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .greetings {
+        .greetings__header__image {
+            height: 18.75rem;
+        }
+    }
+    .skills {
+        .myskills__icons__container {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 1025px) {
+    .greetings {
+        padding: 8rem 0;
+        .greetings__header__grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 3.125rem;
+        }
+        .greetings__header__image {
+            height: 25rem;
+        }
+        .greetings__watermark {
+            top: 10rem;
+        }
+    }
+    .greetings__header__text {
+        margin: 3.5rem 0;
+    }
+    .skills, .projects {
+        padding: 8rem 0;
+        .container__subheader {
+            max-width: 75ch;
+        }
+    }
+    .skills {
+        .myskills__icons__container {
+            margin: 100px 0;
+            .myskills__skill {
+                img {
+                    max-width: 8rem;
+                }
+            }
+        }
+    }
+    .projects {
+        .projects__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+        .project {
+            background-color: var(--container-color);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+    }
+    .footer__email__container {
+        padding: 8rem 0;
+        a {
+            font-family: var(--ff-primary);
+            color: var(--text-color);
+            font-size: clamp(0.875em, 2.5vw, 1em);
+            border-bottom: 2px solid transparent;
+            transition: all .3s;
+            &:hover {
+                color: var(--header-color);
+                border-bottom: 2px solid var(--header-color);
+            }
+        }
+    }
+}

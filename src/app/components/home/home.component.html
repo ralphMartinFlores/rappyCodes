@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+<div class="container ps-4 pe-4">
+  <div class="greetings">
+    <img class="greetings__watermark" src="assets/images/hand.webp" alt="Hand waving watermark image">
+    <h1 class="mt-5 mb-3">Hi, I'm Ralph Martin Flores</h1>
+    <p class="mb-0 greetings__subtitle">A fresh graduate and <span>Front End Developer</span> living in Olongapo City. I enjoy creating products that are pleasing to the eye.</p>
+    <div class="greetings__header__grid">
+      <div class="greetings__header__image"></div>
+      <div class="greetings__header__text">
+        <p>I am 21 years old and I just finished my Bachelor's degree in Information Technology.</p>
+        <p>Ever since I was introduced to HTML & CSS in my first year at College, I immediately fell in love with the idea of making clean and good looking interfaces for the web. Everyday, my hunger to learn more about the markup and the cascade grew, and continues to do so.</p>
+        <p class="mb-5">As I've grown to where I am today as a developer, I got the opportunity to work with and be mentored by senior developers that shaped and elevated my expectations for what should be included in any web application in terms of the design and even user experience.</p>
+      </div>
+    </div>
+  </div>
+  <div class="skills mt-5">
+    <h1 class="mb-4 mb-lg-5">My Skills</h1>
+    <p class="mb-0 container__subheader">Throughout the applications that I was a part of building during my education, I've grasped different ideas about Web Development, and those ideas helped me to create interfaces that not only look good, but also gained the respect of my peers and my superiors during my time in College.</p>
+    <div class="myskills__icons__container">
+      <div class="myskills__skill">
+        <img src="assets/images/html-5.png" alt="HTML5 logo" loading="lazy">
+        <p class="mt-3 mb-0">HTML</p>
+      </div>
+      <div class="myskills__skill">
+        <img src="assets/images/css-3.png" alt="CSS3 logo" loading="lazy">
+        <p class="mt-3 mb-0">CSS</p>
+      </div>
+      <div class="myskills__skill">
+        <img src="assets/images/js.png" alt="JavaScript logo" loading="lazy">
+        <p class="mt-3 mb-0">JavaScript</p>
+      </div>
+      <div class="myskills__skill">
+        <img src="assets/images/angular.png" alt="AngularJS logo" loading="lazy">
+        <p class="mt-3 mb-0">Angular</p>
+      </div>
+      <div class="myskills__skill">
+        <img src="assets/images/php.png" alt="PHP logo" loading="lazy">
+        <p class="mt-3 mb-0">PHP</p>
+      </div>
+      <div class="myskills__skill">
+        <img src="assets/images/mysql.png" alt="MySQL logo" loading="lazy">
+        <p class="mt-3 mb-0">MySQL</p>
+      </div>
+    </div>
+  </div>
+  <div class="projects mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 mb-lg-5">
+      <h1 class="mb-0">My Projects</h1>
+      <a routerLink="/projects">View All <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <p class="mb-4 container__subheader">Take a look at the sites and applications that I've spent my time on that gave me some of the crucial learnings I have right now as a developer.</p>
+    <div class="projects__grid mt-lg-5">
+      <div class="mb-5">
+        <img src="assets/images/bfc-project-banner-1.webp" alt="BFC Olongapo Project Banner" loading="lazy">
+        <h3 class="mt-4 mb-3">But First, Coffee - Olongapo</h3>
+        <p>A landing page for a popular coffee shop in Olongapo City</p>
+        <a class="pb-2" routerLink="/bfc-olongapo">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="mb-5">
+        <img src="assets/images/gocery-project-banner.webp" alt="Gocery Project Banner" loading="lazy">
+        <h3 class="mt-4 mb-3">Gocery (2022)</h3>
+        <p>An e-commerce application built with Angular dedicated to selling groceries</p>
+        <a class="pb-2" routerLink="/gocery">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="assets/images/planets-project-banner.webp" alt="The Planets Project Banner" loading="lazy">
+        <h3 class="mt-4 mb-3">The Planets</h3>
+        <p>My own spin on Frontend Mentor's Planets challenge, built using Angular Material.</p>
+        <a class="pb-2" routerLink="/planets">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container ps-4 pe-4 footer__email__container">
+  <div class="row align-items-center">
+    <div class="col-sm-12 col-lg-6">
+      <h1 class="mb-4">Together, We can build something</h1>
+      <p class="mb-4">If you're looking for a developer, have a question, or just want to connect, don't hesitate to get in touch 👇</p>
+      <a class="pb-2" href="mailto: rappycodes@gmail.com">rappycodes@gmail.com</a>
+    </div>
+    <div class="col-6 d-none d-lg-block">
+      <img src="assets/images/Contact us-rafiki.svg" alt="Contact Me Illustration" loading="lazy">
+    </div>
+  </div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="scroll-top--btn">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+<app-footer></app-footer>

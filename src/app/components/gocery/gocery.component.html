@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+<div class="container ps-4 pe-4">
+    <div class="introduction">
+        <h1 class="mt-5">Go-cery (2022)</h1>
+        <div class="d-flex align-items-center flex-wrap gap-2 mt-3 mb-5">
+            <div class="d-flex gap-2 align-items-center chip angular">
+                <i class="fa-brands fa-angular"></i>
+                <p class="mb-0">Angular</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip php">
+                <i class="fa-brands fa-php"></i>
+                <p class="mb-0">PHP</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip github">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/ralphMartinFlores/gocery-2022" target="_blank" rel="noopener noreferrer">Repository</a>
+            </div>
+            <div class="d-flex gap-2 align-items-center chip personal">
+                <i class="fa-sharp fa-solid fa-people-group"></i>
+                <p class="mb-0">Team</p>
+            </div>
+        </div>
+        <div class="alert alert-info mb-5" role="alert">
+            Hi there, Go-cery isn't live yet on the internet because the data inside it doesn't have a home yet, but you can check out a video demo right <a href="https://tinyurl.com/2p9rxvaz" target="_blank" rel="noopener noreferrer">here</a> 👈
+        </div>
+        <p>Go-cery is a web e-commerce application dedicated to selling groceries, it allows users to see different products sorted by their category, add them to a cart, and place orders.</p>
+        <p>Go-cery (2021) was a project I built with Bernie Inociete and Euriel John Mora for a class project, back then, I wanted to use as much Vanilla CSS as possible as I wasn't too confident back then with using Bootstrap or Materialize (frameworks that were widely used by our classmates). </p>
+        <img src="assets/images/gocery-windowed-screenshot.webp" alt="">
+    </div>
+    <div class="objectives">
+        <div>
+            <img src="assets/images/goal-illustration.svg" alt="">
+        </div>
+        <div>
+            <h1 class="mt-3 mb-4 mb-lg-5">Objectives & Goals</h1>
+            <p>Go-cery (2021) needed a thorough redesign because I believe the previous project lacked several UI fundamentals that I was unaware of at the time. My first experience with responsive web design was also with Gocery (2021), and with this new project, I wanted to show how my knowledge about responsiveness had changed after a year.</p>
+            <p>Additionally, I wanted to utilize a framework this time rather than just plain CSS. I originally wanted to use Angular Material, but I ultimately settled on Bootstrap 5 as I believe this will serve me the best.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <img src="assets/images/gocery-home-full-screenshot.webp" alt="">
+        </div>
+    </div>
+    <div class="problems">
+        <h1 class="mt-3 mb-4 mb-lg-5">Problems Encountered & The Path to Solving them</h1>
+        <p>In contrast to the previous project, I wanted the categories and the stores to display their products on a single HTML file. I used the LocalStorage to accomplish this goal; the products component would look up an item's value in the LocalStorage and then display products either when a user clicked on a category or a store.</p>
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/images/gocery-vegetables-full-screenshot.webp" alt="">
+            </div>
+            <div class="col-6">
+                <img src="assets/images/gocery-cart-full-screenshot.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="lessons">
+        <div>
+            <h1 class="mt-4 mb-4 mb-lg-5">Lessons Learned ✨</h1>
+            <p>I learned in here that Bootstrap has a lot of utility classes that make our lives as a developer easier, previously I had to come up with a class name whenever I want a div container to be flexed but with Bootstrap, it is easy as typing 3 classes to an existing div to emulate a flex display.</p>
+            <p>Although I did not use it that much in this project, Bootstrap's grid system is also very powerful, it's easy to understand and helps us even more to build layouts that are truly responsive.</p>
+            <p>I now see what gives Bootstrap its fame, you really can build User Interfaces much faster. I now appreciate it more and I can see myself using it again for my future projects.</p>
+        </div>
+        <img src="assets/images/lessons.svg" alt="">
+    </div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="scroll-top--btn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<app-footer></app-footer>

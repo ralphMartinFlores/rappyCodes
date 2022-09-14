@@ -1,0 +1,79 @@
+h1 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    color: var(--header-color);
+}
+p {
+    font-family: var(--ff-secondary);
+    font-size: clamp(0.875em, 2.5vw, 1em);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+img {
+    border-radius: 8px;
+    margin: 50px 0;
+}
+a {
+    color: var(--header-color);
+    font-family: var(--ff-secondary);
+    font-size: clamp(0.875em, 2.5vw, 1em);
+}
+.chip {
+    padding: 4px 16px;
+    border-radius: 100px;
+    width: fit-content;
+    p, i {
+        color: #FFF;
+    }
+}
+.html {
+    background-color: #E34C26;
+}
+.css {
+    background-color: #264de4;
+}
+.js {
+    background-color: #f0db4f;
+    p, i {
+        color: #000;
+    }
+}
+.github {
+    background-color: #000;
+}
+.personal {
+    background-color: var(--container-color);
+    p, i {
+        color: var(--header-color);
+    }
+}
+.introduction, .problems {
+    p {
+        max-width: 80ch;
+    }
+}
+.objectives, .lessons {
+    img {
+        display: none;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .introduction, .objectives, .problems, .lessons {
+        padding: 8rem 0;
+    }
+    .objectives, .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1rem;
+        img {
+            display: block;
+            margin: 0;
+        }
+    }
+    .problems {
+        img {
+            margin-top: 100px;
+        }
+    }
+}

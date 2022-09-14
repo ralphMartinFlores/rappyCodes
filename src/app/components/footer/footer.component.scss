@@ -1,0 +1,25 @@
+footer {
+    padding: 3.125rem 0;
+    background-color: var(--container-color);
+    i {
+        transition: all .3s;
+        font-size: 20px;
+        &:hover {
+            color: var(--header-color);
+        }
+    }
+    a {
+        color: var(--text-color);
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: clamp(0.875em, 2.5vw, 1em);
+        color: var(--text-color);
+    }
+    .logo {
+        font-family: 'Roboto Mono', monospace;
+        font-size: clamp(1.5em, 2.5vw, 2em);
+        cursor: pointer;
+        color: var(--header-color);
+    }
+}
