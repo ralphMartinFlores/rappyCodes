@@ -40,6 +40,10 @@ a {
 }
 .github {
     background-color: #000;
+    a {
+        color: #FFF;
+        font-family: var(--ff-secondary);
+    }
 }
 .personal {
     background-color: var(--container-color);

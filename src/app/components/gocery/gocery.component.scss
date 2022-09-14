@@ -20,10 +20,6 @@ img {
     p, i {
         color: #FFF;
     }
-    a {
-        color: #FFF;
-        font-family: var(--ff-secondary);
-    }
 }
 .angular {
     background-color: #DD1B16;
@@ -33,6 +29,10 @@ img {
 }
 .github {
     background-color: #000;
+    a {
+        color: #FFF;
+        font-family: var(--ff-secondary);
+    }
 }
 .personal {
     background-color: var(--container-color);

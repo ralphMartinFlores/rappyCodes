@@ -39,6 +39,10 @@ img {
 }
 .github {
     background-color: #000;
+    a {
+        color: #FFF;
+        font-family: var(--ff-secondary);
+    }
 }
 .introduction, .problems {
     p {
