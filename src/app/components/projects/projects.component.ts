@@ -10,10 +10,23 @@ export class ProjectsComponent implements OnInit {
   isShow: boolean;
   topPosToStartShowing = 100;
 
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    })
+  })
+
   constructor() { }
 
   ngOnInit(): void {
     this.getThemePreference();
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => this.observer.observe(el));
   }
 
   preference: any;

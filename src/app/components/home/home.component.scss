@@ -96,6 +96,35 @@ p {
         }
     }
 }
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.myskills__skill:nth-child(2), .project__card:nth-child(2) {
+    transition-delay: 200ms;
+}
+.myskills__skill:nth-child(3), .project__card:nth-child(3) {
+    transition-delay: 300ms;
+}
+.myskills__skill:nth-child(4), .project__card:nth-child(4) {
+    transition-delay: 400ms;
+}
+.myskills__skill:nth-child(5) {
+    transition-delay: 500ms;
+}
+.myskills__skill:nth-child(6) {
+    transition-delay: 500ms;
+}
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
 @media screen and (min-width: 768px) {
     .greetings {
         .greetings__header__image {
