@@ -12,12 +12,12 @@ footer {
         color: var(--text-color);
     }
     p {
-        font-family: 'Roboto', sans-serif;
+        font-family: var(--ff-secondary);
         font-size: clamp(0.875em, 2.5vw, 1em);
         color: var(--text-color);
     }
     .logo {
-        font-family: 'Roboto Mono', monospace;
+        font-family: var(--ff-primary);
         font-size: clamp(1.5em, 2.5vw, 2em);
         cursor: pointer;
         color: var(--header-color);
