@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BikeodysseyComponent } from './components/bikeodyssey/bikeodyssey.component';
 import { BlancheComponent } from './components/blanche/blanche.component';
+import { KireivalorantComponent } from './components/kireivalorant/kireivalorant.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BlancheComponent } from './components/blanche/blanche.component';
     PlanetsComponent,
     ProjectsComponent,
     BikeodysseyComponent,
-    BlancheComponent
+    BlancheComponent,
+    KireivalorantComponent,
   ],
   imports: [
     BrowserModule,

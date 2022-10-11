@@ -13,6 +13,11 @@ img {
     border-radius: 8px;
     margin: 50px 0;
 }
+a {
+    color: var(--header-color);
+    font-family: var(--ff-secondary);
+    font-size: clamp(0.875em, 2.5vw, 1em);
+}
 .chip {
     padding: 4px 16px;
     border-radius: 100px;
@@ -24,15 +29,14 @@ img {
 .angular {
     background-color: #DD1B16;
 }
-.php {
-    background-color: #474A8A;
+.bootstrap {
+    background-color: #7311F5;
 }
 .github {
     background-color: #000;
     a {
         color: #FFF;
         font-family: var(--ff-secondary);
-        font-size: clamp(0.875em, 2.5vw, 1em);
     }
 }
 .personal {
@@ -49,18 +53,6 @@ img {
 .objectives, .lessons {
     img {
         display: none;
-    }
-}
-.alert-info {
-    background-color: var(--alert-bg-color);
-    border-color: var(--alert-bg-color);
-    color: var(--alert-text-color);
-    font-family: var(--ff-primary);
-    max-width: 80ch;
-    width: fit-content;
-    a {
-        color: var(--alert-text-color);
-        text-decoration: underline;
     }
 }
 @media screen and (min-width: 1025px) {

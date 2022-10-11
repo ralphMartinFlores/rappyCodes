@@ -16,6 +16,7 @@ img {
 a {
     color: var(--header-color);
     font-family: var(--ff-secondary);
+    font-size: clamp(0.875em, 2.5vw, 1em);
 }
 .chip {
     padding: 4px 16px;
